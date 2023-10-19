@@ -1,0 +1,24 @@
+<button (click)="getUsers($event)">GET Users</button>
+<h2>Generic Crud</h2>
+<ol>
+  <li *ngFor="let user of users">
+    {{ user.name }} | {{ user.email }} | {{ user.company.name }}
+  </li>
+</ol>
+
+<hr>
+<h2>Cachable Crud</h2>
+<ol>
+  <li *ngFor="let user of usersCachable">
+    {{ user.name }} | {{ user.email }} | {{ user.company.name }}
+  </li>
+</ol>
+
+<hr>
+<h2>Full Http Response Crud</h2>
+<ol>
+  <li *ngFor="let user of userFullResponse">
+    {{ user.name }} | {{ user.email }} | {{ user.company.name }}
+  </li>
+</ol>
+
